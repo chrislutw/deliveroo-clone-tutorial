@@ -1,0 +1,27 @@
+{
+  "connection": "default",
+  "collectionName": "吳俊生",
+  "info": {
+    "name": "wordpress",
+    "description": "測試是否支援中文"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "integer"
+    },
+    "happyday": {
+      "type": "date"
+    },
+    "password": {
+      "type": "password"
+    }
+  }
+}

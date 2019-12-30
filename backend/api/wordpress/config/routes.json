@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/wordpresses",
+      "handler": "Wordpress.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/wordpresses/count",
+      "handler": "Wordpress.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/wordpresses/:id",
+      "handler": "Wordpress.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/wordpresses",
+      "handler": "Wordpress.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/wordpresses/:id",
+      "handler": "Wordpress.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/wordpresses/:id",
+      "handler": "Wordpress.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
