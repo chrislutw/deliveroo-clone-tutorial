@@ -43,13 +43,22 @@ export default {
     '@nuxtjs/axios',
     '@nuxtjs/pwa',
     // Doc: https://github.com/nuxt-community/dotenv-module
-    '@nuxtjs/dotenv'
+    '@nuxtjs/dotenv',
+    '@nuxtjs/apollo'
   ],
   /*
    ** Axios module configuration
    ** See https://axios.nuxtjs.org/options
    */
   axios: {},
+  apollo: {
+    errorHandler: '~/plugins/apollo-error-handler.js',
+    clientConfigs: {
+      default: {
+        httpEndpoint: 'http://localhost:1337/graphql'
+      }
+    }
+  },
   /*
    ** Build configuration
    */
